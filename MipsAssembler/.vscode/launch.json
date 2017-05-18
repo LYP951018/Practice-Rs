@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch (Windows)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/target/debug/deps/MipsAssembler-30b07b7f845c8ecd.exe",
+            "args": [],//["-c C:\\Users\\LYP\\.rustup\\toolchains\\nightly-x86_64-pc-windows-msvc\\lib\\rustlib\\etc\\libcollections.natvis  C:\\Users\\LYP\\.rustup\\toolchains\\nightly-x86_64-pc-windows-msvc\\lib\\rustlib\\etc\\libcore.natvis"],
+             //[],//["-c .nvload %rust_etc%\\libcore.natvis;.nvload %rust_etc%\\libcollections.natvis;" ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true
+        },
+        {
+            "name": "C++ Attach (Windows)",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
